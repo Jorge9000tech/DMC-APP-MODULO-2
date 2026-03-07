@@ -325,11 +325,7 @@ def main():
                     - **El canal correcto importa:** Al comparar las vías de comunicación (`contact`), quedó en evidencia qué canal genera el mayor retorno, lo que permite dejar de desperdiciar tiempo y recursos en medios menos efectivos.
                     - **El contexto económico manda:** Se identificaron ciertos valores externos a la empresa, como la variación del empleo (`emp.var.rate`) o el indicador Euribor (`euribor3m`), están impactando directamente en el bolsillo y la decisión del cliente. Entender esto es clave para ajustar las expectativas y el tono de la campaña.
                     """
-                )
-        else:
-            st.write("### Dataset no encontrado, cargue el dataset primero")
-    elif menu_seleccion=="Conclusiones jejejeje":
-        st.subheader("Conclusiones")
-
+              )
+       
 if __name__ == '__main__':
     main()
