@@ -328,7 +328,7 @@ def main():
                 )
         else:
             st.write("### Dataset no encontrado, cargue el dataset primero")
-    elif menu_seleccion=="Conclusiones":ejjeje
+    elif menu_seleccion=="Conclusiones jejejeje":
         st.subheader("Conclusiones")
 
 if __name__ == '__main__':
