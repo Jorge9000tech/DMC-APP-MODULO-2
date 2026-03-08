@@ -333,17 +333,15 @@ def main():
         # Conclusiones del análisis
         st.write("### 📈 Principales Conclusiones del Análisis (Dataset Bank Marketing)")
         st.markdown("""
-        Tras realizar el Análisis Exploratorio de Datos (EDA) sobre el histórico de la campaña de marketing bancario, se extraen las siguientes 5 conclusiones fundamentales:
-
-        1. **El impacto crítico del tiempo de llamada (`duration`):** Existe una correlación directa y fuerte entre la duración de la llamada y el éxito de la suscripción. Las llamadas que culminan en un "sí" tienen, en promedio, una duración significativamente mayor. Esto sugiere que generar interés real requiere mantener al cliente en la línea conversando.
+        1. **Optimización del Tiempo de Contacto:** Existe un gran indicador de las duración en las llamadas; los contactos breves rara vez resultan en éxito. **Decisión:** Establecer protocolos de comunicación que prioricen la profundidad del diálogo sobre el volumen de llamadas, capacitando al personal para retener el cliente durante los primeros minutos.
         
-        2. **La fidelidad de campañas previas (`poutcome`):** El historial del cliente es el mejor predictor de éxito. Los clientes que ya aceptaron una oferta en campañas anteriores (*success* en *poutcome*) tienen una tasa de conversión abrumadoramente superior a la de los clientes nuevos o aquellos que rechazaron ofertas pasadas.
+        2.  **Priorización de Canales Digitales:** El análisis muestra que el contacto vía telefonía celular es significativamente más efectivo que el fijo. **Decisión:** Reasignar el presupuesto de marketing para fortalecer las bases de datos móviles.
         
-        3. **El peso del contexto macroeconómico:** Variables externas como la tasa Euribor a 3 meses (`euribor3m`) y la variación de la tasa de empleo (`emp.var.rate`) dictan el ritmo de aceptación. En escenarios de menores tasas de interés y mayor certidumbre laboral, los clientes se muestran mucho más dispuestos a inmovilizar su dinero en depósitos a plazo.
+        3.  **Filtrado por Indicadores Macroeconómicos:** La recepcion del cliente varía drásticamente según la tasa Euribor y el índice de confianza. **Decisión:** Activar campañas masivas de captación de depósitos en función del calendario económico, evitando el desgaste de la fuerza de ventas en periodos de alta volatilidad o tasas desfavorables.
         
-        4. **Efectividad del canal de comunicación (`contact`):** Queda en evidencia que el medio de contacto no da igual. Las interacciones realizadas a través de teléfonos móviles (*cellular*) presentan mejores tasas de respuesta efectiva en comparación con los teléfonos fijos tradicionales (*telephone*).
+        4.  **Capitalización de Experiencias Previas:** Los clientes que tuvieron un resultado exitoso en campañas pasadas muestran la mayor tasa de retorno actual. **Decisión:** Implementar una estrategia de "cliente preferente" donde este segmento sea el primero en ser contactado.
         
-        5. **Nichos demográficos subestimados (`job` / `age`):** Aunque el mayor volumen de llamadas se destina a trabajadores de áreas administrativas y obreros (*blue-collar*), son los **jubilados** y los **estudiantes** quienes muestran las tasas de conversión (proporcionales) más altas. Ajustar la campaña para apuntar más a estos sectores podría optimizar drásticamente el retorno de inversión (ROI) del equipo de ventas.
+        5.  **Segmentación por Nivel Socio-Educativo:** El perfil educativo (específicamente graduados universitarios) muestra una mayor afinidad con el producto de depósito a plazo. **Decisión:** Diseñar material informativo y guiones de venta con un lenguaje técnico-financiero específico para este segmento, aumentando la relevancia de la oferta.
         """)
 if __name__ == '__main__':
     main()
