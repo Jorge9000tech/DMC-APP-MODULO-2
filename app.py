@@ -330,5 +330,14 @@ def main():
             st.write("### Dataset no encontrado, cargue el dataset primero")  
     elif menu_seleccion=="Conclusiones":
         st.subheader("Conclusiones")
+        st.write("""
+        - **Título del proyecto:** Caso de estudio Bank Marketing 
+        - **Descripción del objetivo:** Realizar un análisis del dataset del caso 1 y mostrar los resultados en una página en Streamlit
+        - **Nombre completo del estudiante:** Jorge Ruiz Santillán
+        - **Nombre del curso o módulo:** Especialización en Python for Analytics - Módulo 2
+        - **Año:** 2026
+        - **Descripción del dataaset**: El dataset pertenece a una entidad financiera con los datos de sus clientes, en la cual se busca analizar la efectividad de las campañas de marketing de la empresa
+        - **Tecnologías usadas**: Streamlit, Pandas, Numpy, Matplotlib, Seaborn
+        """)
 if __name__ == '__main__':
     main()
