@@ -330,14 +330,20 @@ def main():
             st.write("### Dataset no encontrado, cargue el dataset primero")  
     elif menu_seleccion=="Conclusiones":
         st.subheader("Conclusiones")
-        st.write("""
-        - **Título del proyecto:** Caso de estudio Bank Marketing 
-        - **Descripción del objetivo:** Realizar un análisis del dataset del caso 1 y mostrar los resultados en una página en Streamlit
-        - **Nombre completo del estudiante:** Jorge Ruiz Santillán
-        - **Nombre del curso o módulo:** Especialización en Python for Analytics - Módulo 2
-        - **Año:** 2026
-        - **Descripción del dataaset**: El dataset pertenece a una entidad financiera con los datos de sus clientes, en la cual se busca analizar la efectividad de las campañas de marketing de la empresa
-        - **Tecnologías usadas**: Streamlit, Pandas, Numpy, Matplotlib, Seaborn
+        # Conclusiones del análisis
+        st.write("### 📈 Principales Conclusiones del Análisis (Dataset Bank Marketing)")
+        st.markdown("""
+        Tras realizar el Análisis Exploratorio de Datos (EDA) sobre el histórico de la campaña de marketing bancario, se extraen las siguientes 5 conclusiones fundamentales:
+
+        1. **El impacto crítico del tiempo de llamada (`duration`):** Existe una correlación directa y fuerte entre la duración de la llamada y el éxito de la suscripción. Las llamadas que culminan en un "sí" tienen, en promedio, una duración significativamente mayor. Esto sugiere que generar interés real requiere mantener al cliente en la línea conversando.
+        
+        2. **La fidelidad de campañas previas (`poutcome`):** El historial del cliente es el mejor predictor de éxito. Los clientes que ya aceptaron una oferta en campañas anteriores (*success* en *poutcome*) tienen una tasa de conversión abrumadoramente superior a la de los clientes nuevos o aquellos que rechazaron ofertas pasadas.
+        
+        3. **El peso del contexto macroeconómico:** Variables externas como la tasa Euribor a 3 meses (`euribor3m`) y la variación de la tasa de empleo (`emp.var.rate`) dictan el ritmo de aceptación. En escenarios de menores tasas de interés y mayor certidumbre laboral, los clientes se muestran mucho más dispuestos a inmovilizar su dinero en depósitos a plazo.
+        
+        4. **Efectividad del canal de comunicación (`contact`):** Queda en evidencia que el medio de contacto no da igual. Las interacciones realizadas a través de teléfonos móviles (*cellular*) presentan mejores tasas de respuesta efectiva en comparación con los teléfonos fijos tradicionales (*telephone*).
+        
+        5. **Nichos demográficos subestimados (`job` / `age`):** Aunque el mayor volumen de llamadas se destina a trabajadores de áreas administrativas y obreros (*blue-collar*), son los **jubilados** y los **estudiantes** quienes muestran las tasas de conversión (proporcionales) más altas. Ajustar la campaña para apuntar más a estos sectores podría optimizar drásticamente el retorno de inversión (ROI) del equipo de ventas.
         """)
 if __name__ == '__main__':
     main()
