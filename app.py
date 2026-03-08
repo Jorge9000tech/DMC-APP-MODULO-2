@@ -71,7 +71,7 @@ class BankMarketingAnalyzer:
 
 def main():
     st.title("Tarea Modulo 2 - Caso de estudio 1")
-    menu_principal = ["Home", "Carga del dataset", "Análisis Exploratorio de Datos"]
+    menu_principal = ["Home", "Carga del dataset", "Análisis Exploratorio de Datos", "Conclusiones"]
     menu_seleccion = st.sidebar.selectbox("Menu principal", menu_principal)
 
     if menu_seleccion == "Home":
@@ -328,5 +328,7 @@ def main():
               )
         else:
             st.write("### Dataset no encontrado, cargue el dataset primero")  
+    elif menu_seleccion=="Conclusiones":
+        st.subheader("Conclusiones")
 if __name__ == '__main__':
     main()
