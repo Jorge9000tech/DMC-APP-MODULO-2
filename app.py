@@ -71,7 +71,7 @@ class BankMarketingAnalyzer:
 
 def main():
     st.title("Tarea Modulo 2 - Caso de estudio 1")
-    menu_principal = ["Home", "Carga del dataset", "Análisis Exploratorio de Datos","Conclusiones"]
+    menu_principal = ["Home", "Carga del dataset", "Análisis Exploratorio de Datos"]
     menu_seleccion = st.sidebar.selectbox("Menu principal", menu_principal)
 
     if menu_seleccion == "Home":
@@ -326,6 +326,7 @@ def main():
                     - **El contexto económico manda:** Se identificaron ciertos valores externos a la empresa, como la variación del empleo (`emp.var.rate`) o el indicador Euribor (`euribor3m`), están impactando directamente en el bolsillo y la decisión del cliente. Entender esto es clave para ajustar las expectativas y el tono de la campaña.
                     """
               )
-       
+        else:
+            st.write("### Dataset no encontrado, cargue el dataset primero")  
 if __name__ == '__main__':
     main()
